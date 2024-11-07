@@ -131,22 +131,6 @@ jQuery(function ($) {
 
 
 
-    $('#photoStream').jflickrfeed({
-        limit: 8,
-        qstrings: {
-            id: '52617155@N08'
-        },
-        itemTemplate: '<li>'+
-                        '<a href="{{image}}" title="{{title}}">' +
-                            '<img src="{{image_s}}" alt="{{title}}" />' +
-                        '</a>' +
-                      '</li>'
-    });
-
-
-
-
-
     // -------------------------------------------------------------
     // Detect IE version
     // -------------------------------------------------------------
@@ -261,9 +245,9 @@ jQuery(function ($) {
 
 	    "use strict";
 	    //set your google maps parameters
-	    var $latitude = 48.869319, //If you unable to find latitude and longitude of your address. Please visit http://www.latlong.net/convert-address-to-lat-long.html you can easily generate.
-	        $longitude = 2.354261,
-	        $map_zoom = 16; /* ZOOM SETTING */
+	    var $latitude = -12.1979846,
+	        $longitude = -38.9603908,
+	        $map_zoom = 15; /* ZOOM SETTING */
 
 	    //google map custom marker icon 
 	    var $marker_url = 'img/map-marker.png';
@@ -271,7 +255,7 @@ jQuery(function ($) {
 	    //we define here the style of the map
 	    var style = [{
 	        "stylers": [{
-	            "hue": "#6145d6"
+	            "hue": "#deb235"
 	        }, {
 	            "saturation": 100
 	        }, {
