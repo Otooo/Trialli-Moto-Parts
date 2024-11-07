@@ -66,28 +66,24 @@ jQuery(function ($) {
     $('.offcanvas-menu a.offcanvas-link').on('click', function(event){
 
         event.preventDefault();
-
-        $('#off-canvas-close-btn').trigger('click');
         
         var $anchor = $(this);
-        
-        $anchor.closest('ul').find('>li').removeClass('active');
-        
+        $anchor.closest('ul').find('>li').removeClass('active');        
         $anchor.parent().addClass('active');
+
+        $('#off-canvas-close-btn').trigger('click');
+        $('#off-canvas-close-btn').trigger('touchstart');
 
         $(window).one('hippo-offcanvas-closed', function(e){
             e.stopImmediatePropagation();
 
             $('html, body').stop().animate({
-                scrollTop: $($anchor.attr('data-target')).offset().top - 50
-            }, 500, 'easeInOutExpo');
+                scrollTop: $($anchor.attr('href')).offset().top - 70
+            }, 900, 'easeInOutExpo');
 
         });
 
     });
-
-
-
 
 
     // -------------------------------------------------------------
