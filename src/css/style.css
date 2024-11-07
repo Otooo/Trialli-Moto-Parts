@@ -1042,10 +1042,10 @@ FOOTER SECTION
 -------------------------------------------------------------------*/
 .footer-widget-wrapper {
     background-repeat: repeat-x;
-    background-image: -webkit-linear-gradient(45deg, #b79400 30%, #967800 75%);
-    background-image: -o-linear-gradient(45deg, #b79400 30%, #967800 75%);
-    background-image: linear-gradient(45deg, #b79400 30%, #967800 75%);
-    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1, startColorstr='#b79400', endColorstr='#967800');
+    background-image: -webkit-linear-gradient(45deg, #deb235 30%, #c48912 75%);
+    background-image: -o-linear-gradient(45deg, #deb235 30%, #c48912 75%);
+    background-image: linear-gradient(45deg, #deb235 30%, #c48912 75%);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1, startColorstr='#deb235', endColorstr='#c48912');
     color: #ffffff;
     padding: 100px 0 46px;
 }
