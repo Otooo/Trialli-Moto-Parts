@@ -84,6 +84,14 @@ img {
 	max-width: 100%
 }
 
+.ml-5 {
+	margin-left: 5px;
+}
+
+.mr-5 {
+	margin-right: 5px;
+}
+
 .mb-0 {
 	margin-bottom: 0 !important;
 }
@@ -748,13 +756,6 @@ TEAM SECTION
 	left: -14px;
 }
 
-.banner-background {
-	background: url(../assets/img/banner/banner_background.png) no-repeat center top fixed;
-	-webkit-background-size: cover;
-	background-size: cover;
-}
-
-
 /* ------------------------------------------------------------------
 COUNTER SECTION
 --------------------------------------------------------------------- */
@@ -763,6 +764,16 @@ COUNTER SECTION
 	-webkit-background-size: cover;
 	background-size: cover;
 }
+
+@media (max-width: 600px) {
+	.counter-section {
+		background: url(../assets/img/banner/banner.png) no-repeat center top fixed;
+		-webkit-background-size: cover;
+		transform: scale(1.2);
+		background-size: cover;
+	}
+}
+
 .css-overlay {
   background-image: -webkit-linear-gradient(20deg, rgba(223, 143, 37, 0.5) 20%, rgba(51, 119, 222, 0.75) 90%);
 	background-image: -o-linear-gradient(20deg, rgba(223, 143, 37, 0.5) 20%, rgba(51, 119, 222, 0.75) 90%);
@@ -1081,9 +1092,8 @@ FOOTER SECTION
 
 .footer-widget a{
     font-size: 12px;
-		width: fit-content;
     line-height: 24px;  
-    display: block;
+    display: inline-block;
     color: #fff;
 }
 .footer-widget a:hover{
@@ -1710,14 +1720,22 @@ BACK TO TOP
 --------------------------------------------------------------------- */
 #toTop{
 	position: fixed;
-	bottom: 30px;
-	right: 30px;
-	color: #deb235;
+	width: 100%;
+	bottom: -14px;
+	text-align: center;
+	color: #fff;
 	cursor: pointer;
 	display: none;
 	z-index: 9999;
 	font-size: 34px;
 	line-height: 34px;
+
+	& i {
+		transform: translate(50%, 50%);
+		background: black;
+    border-radius: 60%;
+    border: solid 15px black;
+	}
 }
 
 
