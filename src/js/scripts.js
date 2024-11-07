@@ -167,7 +167,7 @@ jQuery(function ($) {
 
     (function(){
 
-          $('body').append('<div id="toTop"><i class="flaticon-thin16"></i></div>');
+          $('body').append('<div class="no-caret" id="toTop"><i class="flaticon-thin16"></i></div>');
 
             $(window).scroll(function () {
                 if ($(this).scrollTop() != 0) {

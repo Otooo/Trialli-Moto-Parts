@@ -18,6 +18,10 @@ body {
     -webkit-font-smoothing: antialiased !important;
 }
 
+div *:not(a):not(button), .no-caret {
+	outline: none;
+	caret-color: transparent;
+}
 
 /* ------------------------------------------------
 TYPOGRAPHY
@@ -1077,6 +1081,7 @@ FOOTER SECTION
 
 .footer-widget a{
     font-size: 12px;
+		width: fit-content;
     line-height: 24px;  
     display: block;
     color: #fff;
