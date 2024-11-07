@@ -744,18 +744,23 @@ TEAM SECTION
 	left: -14px;
 }
 
+.banner-background {
+	background: url(../assets/img/banner/banner_background.png) no-repeat center top fixed;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
 
 
 /* ------------------------------------------------------------------
 COUNTER SECTION
 --------------------------------------------------------------------- */
 .counter-section {
-	background: url(../img/experiencetab.jpg) no-repeat center top fixed;
+	background: url(../assets/img/banner/banner.png) no-repeat center top fixed;
 	-webkit-background-size: cover;
 	background-size: cover;
 }
 .css-overlay {
-    background-image: -webkit-linear-gradient(20deg, rgba(223, 143, 37, 0.5) 20%, rgba(51, 119, 222, 0.75) 90%);
+  background-image: -webkit-linear-gradient(20deg, rgba(223, 143, 37, 0.5) 20%, rgba(51, 119, 222, 0.75) 90%);
 	background-image: -o-linear-gradient(20deg, rgba(223, 143, 37, 0.5) 20%, rgba(51, 119, 222, 0.75) 90%);
 	background-image: linear-gradient(20deg, rgba(223, 143, 37, 0.5) 20%, rgba(51, 119, 222, 0.75) 90%);
 }

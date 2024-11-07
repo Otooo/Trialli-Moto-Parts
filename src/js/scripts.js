@@ -66,24 +66,21 @@ jQuery(function ($) {
     $('.offcanvas-menu a.offcanvas-link').on('click', function(event){
 
         event.preventDefault();
-       
 
         $('#off-canvas-close-btn').trigger('click');
-
+        
         var $anchor = $(this);
-
+        
         $anchor.closest('ul').find('>li').removeClass('active');
-
+        
         $anchor.parent().addClass('active');
 
-
         $(window).one('hippo-offcanvas-closed', function(e){
-
-             e.stopImmediatePropagation();
+            e.stopImmediatePropagation();
 
             $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top - 50
-        }, 1500, 'easeInOutExpo');
+                scrollTop: $($anchor.attr('data-target')).offset().top - 50
+            }, 500, 'easeInOutExpo');
 
         });
 
