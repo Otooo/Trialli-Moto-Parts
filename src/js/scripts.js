@@ -241,9 +241,9 @@ jQuery(function ($) {
 
 	    "use strict";
 	    //set your google maps parameters
-	    var $latitude = -12.1979846,
-	        $longitude = -38.9603908,
-	        $map_zoom = 15; /* ZOOM SETTING */
+	    var $latitude = -12.199180122096449,
+	        $longitude = -38.95878091692797,
+	        $map_zoom = 14; /* ZOOM SETTING */
 
 	    //google map custom marker icon 
 	    var $marker_url = 'img/map-marker.png';
