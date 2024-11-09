@@ -52,13 +52,35 @@ jQuery(function ($) {
     //jQuery for page scrolling feature - requires jQuery Easing plugin
     // ------------------------------------------------------------------
 
+    const getTargetOffset = ($anchor) => {
+        var headerHeight = $(".navbar.navbar-default").outerHeight();
+        var targetOffset = $($anchor.attr('href')).offset().top;
+
+        var currentSection;
+        $('section').each(function() {
+            var sectionTop = $(this).offset().top - headerHeight;
+            if ($(window).scrollTop() >= sectionTop) {
+                currentSection = $(this).attr('id');
+            }
+        });
+        if (currentSection == undefined || currentSection == "#home") {
+            targetOffset -= headerHeight;
+        }
+
+        return targetOffset;
+    }
+
     (function () {
 	    $('a.page-scroll').bind('click', function(event) {
-	        var $anchor = $(this);
-	        $('html, body').stop().animate({
-	            scrollTop: $($anchor.attr('href')).offset().top
-	        }, 1500, 'easeInOutExpo');
 	        event.preventDefault();
+
+            var $anchor = $(this)
+            var targetOffset = getTargetOffset($anchor);
+
+	        $('html, body').stop().animate({
+	            scrollTop: targetOffset
+	        }, 1500, 'easeInOutExpo');
+	        
 	    });
     }());
 
@@ -74,11 +96,13 @@ jQuery(function ($) {
         $('#off-canvas-close-btn').trigger('click');
         $('#off-canvas-close-btn').trigger('touchstart');
 
+        var targetOffset = getTargetOffset($anchor);
+
         $(window).one('hippo-offcanvas-closed', function(e){
             e.stopImmediatePropagation();
 
             $('html, body').stop().animate({
-                scrollTop: $($anchor.attr('href')).offset().top - 70
+                scrollTop: targetOffset - 30
             }, 900, 'easeInOutExpo');
 
         });
