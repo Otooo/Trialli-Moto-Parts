@@ -435,7 +435,7 @@ OUR SERVICES SECTION
 Working-process
 --------------------------------------------------------------------- */
 .working-process {
-    background-color: #f6f6f6;
+  background-color: #f6f6f6;
 }
 .process-circle {
     height: 125px;
@@ -483,54 +483,20 @@ Working-process
 
 
 /* ------------------------------------------------------------------
-Work Section
+Material/Work Section
 --------------------------------------------------------------------- */
-.work-filter {
-	margin: 60px 0 30px;
-}
-#filter {
-    overflow: hidden;
+.material-section {
+	background-color: #f6f6f6;
 }
 
-#filter li {
-	display: inline-block;
-	position: relative;
-	padding: 0px 17px;
-}
 
-#filter li:after {
-	position: absolute;
-	content: ":::";
-	font-size: 15px;
-	top: 0;
-	right: 0;
-	margin-right: -5px;
-	color: #d0d0d0;
-}
-#filter li:last-child:after {
-	content: "";
-}
-
-#filter li a {
-    color: #6d6d6d;
-    display: block;
-    margin: 0 5px 0 0;
-    cursor: pointer;
-}
-#filter li a:hover,
-#filter li a.active {
-    border-bottom: 1px dotted #707070;
-    cursor: pointer;
-    color: #deb235;
-    text-decoration: none;
-}
 .portfolio-item {
     margin-bottom: 30px;
     min-height: 270px;
 }
 
 /*portfolio hover effect*/
-figure.css-hover-effect{
+figure.css-hover-effect {
 	background: #ffd033; 
 	background: -moz-linear-gradient(45deg,  #ffd033 42%, #E74C3C 88%);
 	background: -webkit-gradient(linear, left bottom, right top, color-stop(42%,#ffd033), color-stop(88%,#E74C3C)); 
@@ -789,19 +755,6 @@ Google Map on Modal
 #googleMap {
     height     : 400px;
 }
-
-
-
-/* ----------------------------------------------------------------
-Bootstrap Modal
--------------------------------------------------------------------*/
-
-.modal-content {
-	border-radius: 0;
-}
-.modal-header {
-	text-align: center;
-} 
 
 
 
