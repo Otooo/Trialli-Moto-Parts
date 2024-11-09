@@ -52,7 +52,7 @@
 			<script>
 				function changeImageSrc() {
 					const img = document.getElementById('banner');
-					if (window.innerWidth <= 600) {
+					if (window.innerWidth <= 750) {
 						img.src = 'assets/img/banner/banner_background.png';
 					} else {
 						img.src = 'assets/img/banner/banner.png';
@@ -103,17 +103,22 @@
 						</header>
 						<!-- /end header -->
 
-						<!-- banner content -->
+						<!-- home content -->
 						<div id="home" class="carousel slide hero-slide" data-ride="carousel">
 							<!-- Wrapper for slides -->
 							<div class="carousel-inner" role="listbox">
 								
 								<div class="item active">
-									<img id="banner" src="assets/img/banner/banner_background.png" alt="Banner">
+									<img 
+										id="banner" 
+										src="assets/img/banner/banner_background.png" 
+										alt="Banner"
+										style="min-height: 320px !important;"
+									/>
 									<!--Banner Image-->
 
 									<div class="container">
-										<div class="carousel-caption" style="margin-top: 15%; width: 100%;">
+										<div class="carousel-caption" style="margin-top: 15%; width: 100%; padding-bottom: 0;">
 												<h1 class="animated lightSpeedIn no-caret">O conforto e garantia que só a Trialli garante</h1>
 
 												<p class="lead animated lightSpeedIn" style="width: 90%">
@@ -146,7 +151,7 @@
 							</div>
 							<!--.carousel-inner-->
 						</div>
-						<!-- /end banner section -->
+						<!-- /end home section -->
 
 						<!-- material start -->
 						<section id="material" class="work-section section-padding material-section plr-15">
@@ -167,21 +172,28 @@
 												<img class="img-responsive" src="assets/img/material/courvin.png" alt="">
 											</div>
 											<div class="col-md-8">
-												<div class="portfolio-details text-left">
+												<div class="portfolio-details text-justify">
 													<h3>Courvin</h3>
 													<blockquote>
 														<p>
-														O Courvin é um tecido sintético vinílico maleável com a aparência nobre da sua superfície com gravação semelhante ao couro, mas com a resistência, praticidade e durabilidade dos tecidos sintéticos.
+															O Courvin é um tecido sintético vinílico maleável com a aparência nobre da sua 
+															superfície com gravação semelhante ao couro, mas com a resistência, praticidade 
+															e durabilidade dos tecidos sintéticos.
 														</p>
 														<p>
-														Com grande variedade de cores, texturas e gramaturas é um tecido sintético que pode ser usado no revestimento de poltronas, sofás, cabeceiras de camas, bancos de carros e motos, mas também na fabricação de produtos como bolsas, aventais, sapatos, cintos, casacos, e no revestimento de objetos decorativos.
-														</p>
-														<p>	
-														Sua base em malha de algodão facilita o trabalho, proporcionando maior aderência, colagem e ajuste durante a confecção.
+															Com grande variedade de cores, texturas e gramaturas é um tecido sintético que pode 
+															ser usado no revestimento de poltronas, sofás, cabeceiras de camas, bancos de carros 
+															e motos, mas também na fabricação de produtos como bolsas, aventais, sapatos, 
+															cintos, casacos, e no revestimento de objetos decorativos.
 														</p>
 														<p>
-														Proporciona ótimo acabamento, durabilidade, resistência, além de ser muito higiênico por sua facilidade de limpeza.
-													</p>
+															Sua base em malha de algodão facilita o trabalho, proporcionando maior aderência, 
+															colagem e ajuste durante a confecção.
+														</p>
+														<p>
+															Proporciona ótimo acabamento, durabilidade, resistência, além de ser muito higiênico 
+															por sua facilidade de limpeza.
+														</p>
 													</blockquote>
 												</div>
 											</div>
@@ -202,6 +214,7 @@
 										<h2 class="section-title wow zoomIn mb-0"> Nossos Serviços </h2>
 										
 										<div class="star-devider mt-0" />
+									
 										<img src="img/star.png" alt="">
 									</div>
 								</div> <!-- /.row -->
@@ -241,7 +254,7 @@
 													sem abrir mão da qualidade. 
 													Além disso, asseguramos a satisfação dos nossos clientes com uma 
 													garantia que reforça nosso compromisso com a excelência.
-												<p>
+												</p>
 											</div> <!-- /.media-body -->
 										</div> <!-- /.media -->
 									</div> <!-- /.col-sm-6 -->
@@ -306,7 +319,7 @@
 											<i class="flaticon-folder59" ></i>
 										</a>
 
-										</br/>
+										<br/>
 										<p>Contate-nos caso não encontre o modelo desejado no catálogo</p>
 
 									</div><!--/.row -->

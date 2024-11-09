@@ -920,7 +920,7 @@ BACK TO TOP
     }
 
 .hero-slide .carousel-caption h1 {
-    font-size               : 46px;
+    font-size               : 38px;
     line-height             : 1;
     font-weight             : bold;
     text-transform          : capitalize;
@@ -932,7 +932,7 @@ BACK TO TOP
     }
 
 .hero-slide .carousel-caption .lead {
-    font-size               : 26px;
+    font-size               : 22px;
     color                   : #1f1f1f;
 		text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.35);
     font-weight             : normal;
